@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="de.transline.labs.translation.tlc.studio.TlcStudioPlugin"/>
+  <component class="de.transline.labs.translation.tlc.studio.TlcStudioPluginBase"/>
+  <component class="de.transline.labs.translation.tlc.studio.TLCStartTranslationWorkflowForm"/>
+</componentPackage>

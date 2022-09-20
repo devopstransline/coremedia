@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <artifactId>workflow-server.extensions</artifactId>
+    <groupId>com.coremedia.blueprint</groupId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <packaging>pom</packaging>
+  <groupId>de.transline.labs.translation.tlc</groupId>
+  <artifactId>tlc-workflow-server-parent</artifactId>
+
+  <modules>
+    <module>tlc-workflow-server-facade/tlc-restclient-facade</module>
+    <module>tlc-workflow-server-facade/tlc-restclient-facade-default</module>
+    <module>tlc-workflow-server-facade/tlc-restclient-facade-disabled</module>
+    <module>tlc-workflow-server-facade/tlc-restclient-facade-mock</module>
+    <module>tlc-workflow-server-util</module>
+    <module>tlc-workflow-server</module>
+  </modules>
+
+  <properties>
+    <gcc-restclient.version>2.4.0</gcc-restclient.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>middle-core-bom</artifactId>
+        <version>${cm.workflow-server.core.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>studio-server-core-bom</artifactId>
+        <version>${cm.workflow-server.core.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.awaitility</groupId>
+        <artifactId>awaitility</artifactId>
+        <version>3.1.2</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+</project>
+

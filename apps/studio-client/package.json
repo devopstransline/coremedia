@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "de.transline.labs.translation.tlc.studio.TlcStudioPlugin",
+      "name": "Transline Studio Plugin"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+url=https://connect-dev.translations.com/api/v2/
+key=0e...abc
+fileType=xliff
